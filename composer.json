@@ -1,0 +1,21 @@
+{
+    "name": "markdownable/markdownable",
+    "description": "A HTML 2 Markdown converter.",
+    "keywords": ["markdown", "html", "converter"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4"
+    },
+    "authors": [
+        {
+            "name": "Phil Bennett",
+            "email": "philipobenito@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Markdownable": "src/"
+        }
+    },
+    "prefer-stable": true
+}
