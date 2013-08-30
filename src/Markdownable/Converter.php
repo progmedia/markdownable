@@ -81,6 +81,8 @@ class Converter
             $this->html = $html;
         }
 
+        $this->html = preg_replace('~>\s+<~', '><', $this->html);
+
         if (is_null($this->html)) {
             throw new Exception\NotTraversableException(
                 'No HTML was provided to traverse'
@@ -147,7 +149,7 @@ class Converter
             $markdown = $this->parsers[$node->nodeName]->parse($node);
         }
 
-        $markdownNode = $this->doc->createTextNode(ltrim($markdown, ' '));
+        $markdownNode = $this->doc->createTextNode($markdown);
         $node->parentNode->replaceChild($markdownNode, $node);
     }
 

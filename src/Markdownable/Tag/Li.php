@@ -45,7 +45,7 @@ class Li implements ParserInterface
             $current = $nodes->item($i);
 
             if ($current->isSameNode($node)) {
-                return $i / 2 + 1;
+                return $i + 1;
             }
         }
     }
