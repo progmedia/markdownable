@@ -28,6 +28,6 @@ class Blockquote implements ParserInterface
             $markdown .= '> ' . $line . PHP_EOL;
         }
 
-        return PHP_EOL . PHP_EOL . $markdown . PHP_EOL . PHP_EOL;
+        return PHP_EOL . PHP_EOL . $markdown . PHP_EOL;
     }
 }

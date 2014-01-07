@@ -1,11 +1,11 @@
 {
     "name": "markdownable/markdownable",
-    "description": "A HTML 2 Markdown converter.",
-    "keywords": ["markdown", "html", "converter"],
+    "description": "A HTML to Markdown converter. Bundled with Parsedown for Markdown to HTML conversion",
+    "keywords": ["markdown", "html", "converter", "parsedown"],
     "license": "MIT",
     "require": {
         "php": ">=5.4",
-        "dflydev/markdown": "1.*"
+        "erusev/parsedown": "0.8.*"
     },
     "authors": [
         {
@@ -17,6 +17,5 @@
         "psr-0": {
             "Markdownable": "src/"
         }
-    },
-    "prefer-stable": true
+    }
 }

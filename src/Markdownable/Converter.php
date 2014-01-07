@@ -12,6 +12,9 @@ namespace Markdownable;
  */
 class Converter
 {
+    /**
+     * New Line
+     */
     const NEWLINE = PHP_EOL;
 
     /**

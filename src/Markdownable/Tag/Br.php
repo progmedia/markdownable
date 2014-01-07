@@ -19,6 +19,6 @@ class Br implements ParserInterface
      */
     public function parse($node)
     {
-        return Converter::NEWLINE;
+        return PHP_EOL;
     }
 }

@@ -14,6 +14,8 @@ use Markdownable\Converter;
  */
 class Li implements ParserInterface
 {
+    protected $position = 0;
+
     /**
      * {@inheritdoc}
      */
@@ -38,15 +40,14 @@ class Li implements ParserInterface
      */
     protected function getPosition($node)
     {
-        $nodes = $node->parentNode->childNodes;
-        $total = $nodes->length;
+        $first = $node->parentNode->firstChild;
 
-        for ($i = 0; $i < $total; $i++) {
-            $current = $nodes->item($i);
-
-            if ($current->isSameNode($node)) {
-                return $i + 1;
-            }
+        if ($first->isSameNode($node)) {
+            $this->position = 0;
         }
+
+        $this->position++;
+
+        return $this->position;
     }
 }

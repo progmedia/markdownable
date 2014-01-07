@@ -17,6 +17,6 @@ class Ol implements ParserInterface
      */
     public function parse($node)
     {
-        return PHP_EOL . PHP_EOL . $node->nodeValue . PHP_EOL . PHP_EOL;
+        return PHP_EOL . PHP_EOL . trim($node->nodeValue) . PHP_EOL . PHP_EOL;
     }
 }
