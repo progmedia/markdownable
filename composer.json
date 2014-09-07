@@ -1,16 +1,16 @@
 {
-    "name": "markdownable/markdownable",
+    "name": "progmedia/markdownable",
     "description": "A HTML to Markdown converter. Bundled with Parsedown for Markdown to HTML conversion",
     "keywords": ["markdown", "html", "converter", "parsedown"],
-    "license": "MIT",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4",
         "erusev/parsedown": "0.8.*"
     },
     "authors": [
         {
-            "name": "Phil Bennett",
-            "email": "philipobenito@gmail.com"
+            "name": "Pro-G Media",
+            "email": "dev@videogamer.com"
         }
     ],
     "autoload": {
