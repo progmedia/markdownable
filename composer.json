@@ -4,8 +4,7 @@
     "keywords": ["markdown", "html", "converter", "parsedown"],
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.4",
-        "erusev/parsedown": "0.8.*"
+        "php": ">=5.4"
     },
     "authors": [
         {
