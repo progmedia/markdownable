@@ -1,6 +1,6 @@
 {
     "name": "progmedia/markdownable",
-    "description": "A HTML to Markdown converter. Bundled with Parsedown for Markdown to HTML conversion",
+    "description": "A HTML to Markdown converter.",
     "keywords": ["markdown", "html", "converter", "parsedown"],
     "minimum-stability": "stable",
     "require": {
