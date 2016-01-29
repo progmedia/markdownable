@@ -1,5 +1,6 @@
 {
     "name": "progmedia/markdownable",
+    "license": "MIT",
     "description": "A HTML to Markdown converter.",
     "keywords": ["markdown", "html", "converter", "parsedown"],
     "minimum-stability": "stable",
